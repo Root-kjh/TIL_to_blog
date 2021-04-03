@@ -39,23 +39,23 @@ const ProfileContainer = () => (
 
     <h3>Skills</h3>
     <h5>Good</h5>
-        <p>Django</p>
+        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white"/>&nbsp;
     <h5>Average</h5>
-        <p>Spring</p>
-        <p>SpringBoot</p>
-        <p>React</p>
-        <p>Mysql</p>
-        <p>Python</p>
-        <p>Java</p>
-    <h5>Bad</h5>
-        <p>Ruby on Rails</p>
-        <p>MongoDB</p>
-        <p>Ruby</p>
-        <p>PHP</p>
-        <p>Javascript</p>
-        <p>C</p>
-        <p>Assembly</p>
-        <p>TypeScript</p>
+        <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Mysql-E6B91E?style=flat-square&logo=MySql&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Javascript-f0c929?style=flat-square&logo=Javascript&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/TypeScript-0076C6?style=flat-square&logo=Typescript&logoColor=white"/>&nbsp;
+    <h5>Infancy</h5>
+        <img src="https://img.shields.io/badge/Ruby on Rails-CC0000?style=flat-square&logo=Ruby%20on%20Rails&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Ruby-810000?style=flat-square&logo=Ruby&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Assembly-ff005c?style=flat-square&logoColor=white"/>&nbsp;
 </Container>
 );
 

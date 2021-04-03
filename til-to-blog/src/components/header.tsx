@@ -1,20 +1,23 @@
 import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import React from 'react';
+import { readdir } from 'fs';
 
 class Header extends React.Component{
     render(){
-        var fs = require('fs');
-        var folders: Array<string>;
-        fs.readdir('/TIL', function(err: any, filelist: any){
-            folders = filelist;
-        })
+        // const fs = require('fs');
+        // console.log(fs);
+        // var find = require('list-files');
+        // var folders: Array<string>;
+        // console.log(readdir);
+        // readdir('/TIL', (err, filelist) => {console.log(filelist)});
+        // folders = fs.readdirSync('/TIL/');
+        // find((result: any) => (console.log(result)));
         return(
             <Navbar bg="light" variant="light" sticky="top" >
             <Navbar.Brand>JongHyun's tech blog</Navbar.Brand>
             <Nav className="mr-auto">
                 <NavDropdown title="posts" id="basic-nav-dropdown">
                     {/* scraping in til root folders*/}
-                    console.log(folders);
                     <NavDropdown.Item href="#">Database</NavDropdown.Item>
                     <NavDropdown.Item href="#">Django</NavDropdown.Item>
                     <NavDropdown.Item href="#">Docker</NavDropdown.Item>
