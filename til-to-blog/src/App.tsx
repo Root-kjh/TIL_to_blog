@@ -11,12 +11,8 @@ const App: React.FC = () => {
       <Router>
         <Header/>
         <Switch>
-          <Route path="/docs/:doc-path">
-            <DocContainer/>
-          </Route>
-          <Route path="/">
-            <ProfileContainer/>
-          </Route>
+          <Route path="/docs" component={DocContainer}/>
+          <Route path="/" component={ProfileContainer}/>
         </Switch>
       </Router>
     </div>

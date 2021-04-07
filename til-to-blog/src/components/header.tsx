@@ -1,36 +1,35 @@
-import { Button, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import React from 'react';
-import { readdir } from 'fs';
+import { Button, Form, FormControl, ListGroup, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { fileURLToPath } from 'node:url';
 
-class Header extends React.Component{
-    render(){
-        // const fs = require('fs');
-        // console.log(fs);
-        // var find = require('list-files');
-        // var folders: Array<string>;
-        // console.log(readdir);
-        // readdir('/TIL', (err, filelist) => {console.log(filelist)});
-        // folders = fs.readdirSync('/TIL/');
-        // find((result: any) => (console.log(result)));
-        return(
-            <Navbar bg="light" variant="light" sticky="top" >
-            <Navbar.Brand>JongHyun's tech blog</Navbar.Brand>
+const Header = () =>{
+    const [fileList, setFileList] = useState([]);
+    const [searchList, setSearchList] = useState([]);
+    const searchStyle = {
+        position: "absolute",
+        right:10,
+        width:250,
+    } as React.CSSProperties;
+    const searchKeyworrd = (e: any) => {
+        axios.post('http://kjh-projects.kro.kr:8100/TIL/search/', {keyword: e.target.value})
+            .then(response => {
+                setSearchList(response.data.file_list.map((file: any) => <ListGroup.Item action href={"/docs?path="+file.file_path}>{file.file_name}</ListGroup.Item>))
+            });
+    };
+
+    useEffect(() => {axios.post('http://kjh-projects.kro.kr:8100/TIL/explorer/', {path: "/"})
+    .then(response => {
+        setFileList(response.data.file_context.map((file: any) => <NavDropdown.Item href={"/docs?path="+file.file_path}>{file.file_name}</NavDropdown.Item>));
+    })},[]);
+
+    return(
+        <div>
+        <Navbar bg="light" variant="light" sticky="top" >
+            <Navbar.Brand href="/">JongHyun's tech blog</Navbar.Brand>
             <Nav className="mr-auto">
                 <NavDropdown title="posts" id="basic-nav-dropdown">
-                    {/* scraping in til root folders*/}
-                    <NavDropdown.Item href="#">Database</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Django</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Docker</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Flask</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Github</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Math</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Network</NavDropdown.Item>
-                    <NavDropdown.Item href="#">OS</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Programming</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Spring</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Testing</NavDropdown.Item>
-                    <NavDropdown.Item href="#">Typescript</NavDropdown.Item>
-                    <NavDropdown.Item href="#">WEB</NavDropdown.Item>
+                    {fileList}
                 </NavDropdown>
                 <Nav.Link href="https://github.com/Root-kjh/">github</Nav.Link>
                 <Nav.Link href="https://www.acmicpc.net/user/kjh3141">Baekjoon</Nav.Link>
@@ -38,12 +37,11 @@ class Header extends React.Component{
                 <Nav.Link href="mailto:wldnro3141@gmail.com">Gmail</Nav.Link>
             </Nav>
             <Form inline>
-                <FormControl type="text" placeholder="search post" className="mr-sm-2"/>
-                <Button variant="outline-primary">Search</Button>
+                    <FormControl type="text" placeholder="search post" className="mr-sm-2" onChange={searchKeyworrd}/>
             </Form>
         </Navbar>
-        )   
-    }
-};
+                    <div style={searchStyle}>{searchList}</div>
+        </div>
+    )}
 
 export default Header;

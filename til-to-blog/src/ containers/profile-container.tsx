@@ -4,14 +4,14 @@ const ProfileContainer = () => (
 <Container>
     <br/>
     <h3>Background</h3>
-    <p>2016~2019</p>
+    <p>2016.03~2019.02</p>
     <p>Seoul Digitech Highschool(Graduated)</p>
 
     <br/>
     <h3>Work Experience</h3>
-    <p>2019~2021</p>
+    <p>2019.03~2021.04</p>
     <p>Secuve(QA Engineer)</p>
-    <p>2021~</p>
+    <p>2021.04~</p>
     <p>Humanscacpe(Backend Engineer)</p>
 
     <br/>
@@ -39,23 +39,23 @@ const ProfileContainer = () => (
 
     <h3>Skills</h3>
     <h5>Good</h5>
-        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=Django&logoColor=white" alt="django"/>&nbsp;
     <h5>Average</h5>
-        <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/Mysql-E6B91E?style=flat-square&logo=MySql&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/Javascript-f0c929?style=flat-square&logo=Javascript&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/TypeScript-0076C6?style=flat-square&logo=Typescript&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white" alt="spring"/>&nbsp;
+        <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat-square&logo=Spring&logoColor=white" alt="springboot"/>&nbsp;
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white" alt="react"/>&nbsp;
+        <img src="https://img.shields.io/badge/Mysql-E6B91E?style=flat-square&logo=MySql&logoColor=white" alt="mysql"/>&nbsp;
+        <img src="https://img.shields.io/badge/Python-3766AB?style=flat-square&logo=Python&logoColor=white" alt="python"/>&nbsp;
+        <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white" alt="java"/>&nbsp;
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=PHP&logoColor=white" alt="php"/>&nbsp;
+        <img src="https://img.shields.io/badge/Javascript-f0c929?style=flat-square&logo=Javascript&logoColor=white" alt="javascript"/>&nbsp;
+        <img src="https://img.shields.io/badge/TypeScript-0076C6?style=flat-square&logo=Typescript&logoColor=white" alt="typescript"/>&nbsp;
     <h5>Infancy</h5>
-        <img src="https://img.shields.io/badge/Ruby on Rails-CC0000?style=flat-square&logo=Ruby%20on%20Rails&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/Ruby-810000?style=flat-square&logo=Ruby&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/>&nbsp;
-        <img src="https://img.shields.io/badge/Assembly-ff005c?style=flat-square&logoColor=white"/>&nbsp;
+        <img src="https://img.shields.io/badge/Ruby on Rails-CC0000?style=flat-square&logo=Ruby%20on%20Rails&logoColor=white" alt="ruby on rails"/>&nbsp;
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white" alt="mongodb"/>&nbsp;
+        <img src="https://img.shields.io/badge/Ruby-810000?style=flat-square&logo=Ruby&logoColor=white" alt="ruby"/>&nbsp;
+        <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white" alt="c"/>&nbsp;
+        <img src="https://img.shields.io/badge/Assembly-ff005c?style=flat-square&logoColor=white" alt="assembly"/>&nbsp;
 </Container>
 );
 
