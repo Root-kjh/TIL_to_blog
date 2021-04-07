@@ -1,5 +1,5 @@
 {
-  "homepage": "http://kjh-projects.kro.kr/blog/",
+  "homepage": "http://kjh-projects.kro.kr:3100/",
   "name": "til-to-blog",
   "version": "0.1.0",
   "private": true,
