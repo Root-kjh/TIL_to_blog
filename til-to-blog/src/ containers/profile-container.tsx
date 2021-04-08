@@ -56,6 +56,7 @@ const ProfileContainer = () => (
         <img src="https://img.shields.io/badge/Ruby-810000?style=flat-square&logo=Ruby&logoColor=white" alt="ruby"/>&nbsp;
         <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white" alt="c"/>&nbsp;
         <img src="https://img.shields.io/badge/Assembly-ff005c?style=flat-square&logoColor=white" alt="assembly"/>&nbsp;
+        <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=Elasticsearch&logoColor=white" alt="elasticsearch"/>&nbsp;
 </Container>
 );
 
